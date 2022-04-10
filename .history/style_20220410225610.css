@@ -1,13 +1,8 @@
 @font-face {
-  /* Тут по факту, ти оголошуєш шрифт, тому теж треба правильно записати.
-  font-family: 'Anton'; так правильно  */
-
   font-family: Anton;
   src: url(fonts/Anton-Regular.ttf);
 }
 @font-face {
-  /* Тут по факту, ти оголошуєш шрифт, тому теж треба правильно записати.
-  font-family: 'OpenSans'; так правильно  */
   font-family: opensans;
   src: url(/fonts/OpenSans-Regular.ttf);
 }
@@ -15,13 +10,8 @@
 body {
   padding: 0;
   margin: 0 auto;
-
-  /* Погано записуєш font-family.
-  font-family: 'Anton'; так правильно  */
-
   font-family: Anton, sans-serif;
 }
-
 header {
   background-image: url(IMG/header-bg.jpg);
   background-size: cover;
@@ -77,6 +67,7 @@ header {
 
 .container {
   width: 1170px;
+  /* height: 840px; */
   margin: 0 auto;
 }
 
@@ -86,7 +77,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar-left {
   display: flex;
   align-items: center;
@@ -99,17 +89,14 @@ header {
   display: flex;
   list-style: none;
 }
-
 .link a {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
 }
-
 .link a:hover {
   text-decoration: underline;
 }
-
 .tellink {
   text-decoration: none;
   color: #ffffff;
@@ -122,19 +109,12 @@ header {
 .link {
   margin-right: 40px;
 }
-
 .link:last-child {
   margin: 0;
 }
-
 .about {
-  /* тут ширина є зайва. І загалом 100vw є значно ширше, ніж вільний простір, який там лишився
-  Вільний простір там 1170px (розмір контейнера), а 100vw то просто цілий твій екран 
-  */
-
-  /* width: 100vw; */
+  width: 100vw;
 }
-
 .abouthead {
   margin: 0;
   padding: 0;
@@ -142,48 +122,36 @@ header {
   font-size: 50px;
   text-transform: uppercase;
 }
-
 .text-containet {
   margin-top: 58px;
   display: flex;
   justify-content: space-between;
 }
-
 .head-text {
   margin: 0;
   padding: 0;
   font-size: 25px;
   text-transform: uppercase;
 }
-
 .main-text {
   margin-top: 40px;
   width: 564px;
   font-weight: 400;
-
-  /* Погано записуєш font-family.
-  font-family: 'Open Sans'; так правильно  */
-
   font-family: opensasns;
   font-size: 16px;
 }
-
 .images {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
-
 .footer {
   margin-top: 120px;
   margin-bottom: 80px;
   display: flex;
 
-  /* Погано записуєш font-family.
-  font-family: 'Open Sans'; так правильно  */
   font-family: opensans;
 }
-
 .made {
   margin-right: 60px;
 }
